@@ -4,7 +4,7 @@ import { Section } from "./Section"
 export const Hero = () => {
     return <Section className="flex max-md:flex-col items-start gap-4">
         <div className="flex-[3] w-full flex flex-col gap-2">
-            <h2 className="font-caption font-bold text-5xl text-primary">Adrien D&aposacunto</h2>
+            <h2 className="font-caption font-bold text-5xl text-primary">Adrien D'acunto</h2>
             <h3 className="text-3xl font-caption">
                 Software developer
             </h3>
@@ -18,7 +18,7 @@ export const Hero = () => {
             <img 
             src="images/adrien.png"
             className="w-full h-auto max-w-xs max-md:w-56 rounded-xl"
-            alt="Adrien&aposs picture"
+            alt="Adrien's picture"
             />
         </div>
     </Section>
