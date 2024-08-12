@@ -8,6 +8,9 @@ const nextConfig = {
     images: {
         unoptimized: true,
       },
+      rules: {
+        '@next/next/no-img-element': 'off',
+      },
   };
   
   export default nextConfig;
