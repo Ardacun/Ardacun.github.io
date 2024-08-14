@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Adrien D'acunto - Developer Portfolio
 
-## Getting Started
+Welcome to the repository for my portfolio website! I'm Adrien D'acunto, a software developer, passionate about web and software development. This repository contains the code for my portfolio, where you can explore my projects, skills, and more.
 
-First, run the development server:
+## 🌐 Explore My Portfolio
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+For a full view of my work, projects, and skills, please visit my portfolio website:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**[Visit Portfolio](https://ardacun.github.io/)**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ What's Inside
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+This repository contains the source code for my portfolio, built with Next.js and Tailwind CSS.
 
-## Learn More
+- **Projects Section:** Showcases a selection of my fun projects.
+- **About Me:** A brief bio and my journey in tech.
+- **Experiences:** Detailed accounts of my professional experiences and roles I've held.
+- **Skills:** Overview of my technical expertise.
+- **Contact:** How to get in touch with me.
 
-To learn more about Next.js, take a look at the following resources:
+## 🚀 Highlights
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Here are a few projects featured on my portfolio:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- **[TicTacToe](https://github.com/Ardacun/TicTacToe):** an online Tic Tac Toe application 🎮
+- **[Stocktaking](https://github.com/Ardacun/Stocktaking):** an inventory management application 💲
+- **[MoneyFlow-Monitor](https://github.com/Ardacun/MoneyFlow-Monitor):** a financial monitor application 💥
 
-## Deploy on Vercel
+## 💼 Actively Looking for Job Opportunities
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+I am currently **actively seeking** job opportunities in Full-Stack Development, Front-end Development, Back-end Development and Software Engineering. I am eager to bring my skills to a dynamic and forward-thinking team.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+If you’re hiring or know of any opportunities, please feel free to reach out!
+
+## 📫 Get in Touch
+
+I'm always open to new opportunities and collaborations. You can find more details on how to contact me on my [portfolio website](https://ardacun.github.io/), or connect with me directly on:
+
+- **LinkedIn:** [AdrienDacunto](https://linkedin.com/in/yourusername)
+- **Email:** [dev.adrien.d@gmail.com](dev.adrien.d@gmail.com)
+
+## 📝 License
+
+This repository and my portfolio are open-source. Feel free to explore and use!
+
+
