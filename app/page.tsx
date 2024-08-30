@@ -11,10 +11,6 @@ import Head from "next/head";
 export default function Home() {
   return (
     <main>
-      <Head>
-        <meta name="google-site-verification" content="d27qrz77GIezuSGXXalLktKiq2oyZlgYGOhj1ifvRA8" />
-      </Head>
-      
       <Header />
 
       <Spacing size="md" />

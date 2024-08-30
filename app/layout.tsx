@@ -14,6 +14,9 @@ const AnekTelugu = Anek_Telugu({
 export const metadata: Metadata = {
   title: "Adrien D'acunto",
   description: "Software Engineer",
+  verification: {
+    google: 'd27qrz77GIezuSGXXalLktKiq2oyZlgYGOhj1ifvRA8'
+  },
 };
 
 export default function RootLayout({
