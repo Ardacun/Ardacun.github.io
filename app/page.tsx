@@ -39,4 +39,4 @@ function Home() {
   );
 }
 
-export default appWithTranslation(Home); // translate the page
+export default Home; // translate the page
