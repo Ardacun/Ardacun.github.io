@@ -4,7 +4,9 @@ import { GithubIcon } from "./icons/Githubicon"
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { LinkedInIcon } from "./icons/LinkedInIcon";
+import { LanguageSwitch } from "./LanguageSwitch";
 
+// Header component
 export const Header = () => {
     return (
         <header className="sticky top-0 py-4">
@@ -23,6 +25,7 @@ export const Header = () => {
                     className={cn(buttonVariants({variant: "outline"}), "size-6 p-0")}>
                         <LinkedInIcon size={12} className="text-foreground"></LinkedInIcon>
                     </Link>
+                    <LanguageSwitch />
                 </ul>
             </Section>
         </header>

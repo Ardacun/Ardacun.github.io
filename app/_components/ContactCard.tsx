@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { ArrowUpRight } from "lucide-react";
 
+// Contact card component with props : image, imageMedium, name, description, url
 export const ContactCard = (props: {
     image: string;
     imageMedium : string;

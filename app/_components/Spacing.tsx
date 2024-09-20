@@ -1,9 +1,11 @@
 import { cn } from "@/lib/utils";
 
+// Spacing props with different sizes : sm, md, lg
 export type SpacingProps = {
     size?: "sm" | "md" | "lg";
 };
 
+// Spacing component
 export const Spacing = ({size = "md"}: SpacingProps) => {
     return (
         <div className={cn({

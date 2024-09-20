@@ -1,5 +1,6 @@
 import { LucideIcon } from "lucide-react";
 
+// Side project props
 export type SideProjectProps = {
     Logo: LucideIcon;
     title: string;
@@ -7,6 +8,7 @@ export type SideProjectProps = {
     url: string;
 };
 
+// Side project component
 export const SideProject = ({ Logo, title, description, url }: SideProjectProps) => {
     return (
       <a href={url} className="inline-flex items-center gap-4 hover:bg-accent/50 transition-colors p-1 rounded">

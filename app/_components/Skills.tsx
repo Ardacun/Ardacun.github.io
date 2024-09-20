@@ -18,13 +18,18 @@ import { MongoDbIcon } from "./icons/MongoDbIcon";
 import { GithubIcon } from "./icons/Githubicon";
 import { GitIcon } from "./icons/GitIcon";
 import { NextJSIcon } from "./icons/NextJSIcon";
+import { Trans, useTranslation } from "react-i18next";
 
+// Skills component
 export const Skills = () => {
+    
+    const { t } = useTranslation(); // Specify the namespace
+    
     return (
         <Section className="flex flex-col items-start gap-4">
-            <Badge variant={"outline"}>Skills</Badge>
+            <Badge variant={"outline"}>{t('skills')}</Badge>
             <h2 className="pb-2 text-3xl font-semibold tracking-tight first:mt-0">
-                What I can use...
+                {t('use')}
             </h2>
             <div className="flex flex-wrap gap-9">
                 <div className="flex flex-col flex-1 min-w-[250px] gap-2">
@@ -36,10 +41,12 @@ export const Skills = () => {
                         <PHPIcon size={42} />
                     </div>
                     <h3 className="text-2xl font-semibold tracking-tight mb-2">
-                        Web Technologies
+                        {t('web')}
                     </h3>
                     <p className="text-sm text-muted-foreground">
-                        During my professional experiences and academic training, I have used classical technologies such as <Code>HTML</Code>, <Code>CSS</Code>, <Code>JavaScript</Code>, <Code>TypeScript</Code> as well as <Code>PHP</Code> on the backend.
+                        <Trans i18nKey="web_tech">
+                            During my professional experiences and academic training, I have used classical technologies such as <Code>HTML</Code>, <Code>CSS</Code>, <Code>JavaScript</Code>, <Code>TypeScript</Code> as well as <Code>PHP</Code> on the backend.
+                        </Trans>
                     </p>
                 </div>
 
@@ -49,10 +56,12 @@ export const Skills = () => {
                         <PythonIcon size={42} />
                     </div>
                     <h3 className="text-2xl font-semibold tracking-tight mb-2">
-                        Others Languages
+                        {t('others')}
                     </h3>
                     <p className="text-sm text-muted-foreground">
-                        In parallel, I have used other languages, primarily <Code>Java</Code>, and also <Code>Python</Code>.
+                        <Trans i18nKey="others_lang">
+                            In parallel, I have used other languages, primarily <Code>Java</Code>, and also <Code>Python</Code>.
+                        </Trans>
                     </p>
                 </div>
 
@@ -62,10 +71,12 @@ export const Skills = () => {
                         <MongoDbIcon size={42} />
                     </div>
                     <h3 className="text-2xl font-semibold tracking-tight mb-2">
-                        Databases
+                        {t('databases')}
                     </h3>
                     <p className="text-sm text-muted-foreground">
-                        I have worked with databases such as <Code>MySQL</Code> and <Code>MongoDB</Code>.
+                        <Trans i18nKey="databases_used">
+                            I have worked with databases such as <Code>MySQL</Code> and <Code>MongoDB</Code>.
+                        </Trans>
                     </p>
                 </div>
 
@@ -77,10 +88,12 @@ export const Skills = () => {
                         <JiraIcon size={42} />
                     </div>
                     <h3 className="text-2xl font-semibold tracking-tight mb-2">
-                        Tools
+                        {t('tools')}
                     </h3>
                     <p className="text-sm text-muted-foreground">
-                        The tools I use are varied: <Code>Visual Studio Code</Code>, <Code>GitHub</Code>, <Code>Git</Code>, and <Code>Jira</Code>.
+                        <Trans i18nKey="tools_used">
+                            The tools I use are varied: <Code>Visual Studio Code</Code>, <Code>GitHub</Code>, <Code>Git</Code>, and <Code>Jira</Code>.
+                        </Trans>
                     </p>
                 </div>
 
@@ -92,20 +105,24 @@ export const Skills = () => {
                         <TailwindIcon size={42} />
                     </div>
                     <h3 className="text-2xl font-semibold tracking-tight mb-2">
-                        Frameworks
+                        {t('frameworks')}
                     </h3>
                     <p className="text-sm text-muted-foreground">
-                        I use various frameworks in my personal projects. The most frequent ones are <Code>Angular</Code>, <Code>React</Code>, and <Code>Next.js</Code>, as well as other libraries like <Code>Tailwind</Code>.
+                        <Trans i18nKey="frameworks_used">
+                            I use various frameworks in my personal projects. The most frequent ones are <Code>Angular</Code>, <Code>React</Code>, and <Code>Next.js</Code>, as well as other libraries like <Code>Tailwind</Code>.
+                        </Trans>
                     </p>
                 </div>
 
                 <div className="flex flex-col flex-1 min-w-[250px] gap-2">
                     <JiraIcon size={42} />
                     <h3 className="text-2xl font-semibold tracking-tight mb-2">
-                        Agile Concepts
+                        {t('agile')}
                     </h3>
                     <p className="text-sm text-muted-foreground">
-                        In a professional setting, I have worked in teams using the <Code>Scrum</Code> methodology, and I am also familiar with the <Code>SAFe</Code> concept.
+                        <Trans i18nKey="agile_concepts">
+                            In a professional setting, I have worked in teams using the <Code>Scrum</Code> methodology, and I am also familiar with the <Code>SAFe</Code> concept.
+                        </Trans>
                     </p>
                 </div>
             </div>

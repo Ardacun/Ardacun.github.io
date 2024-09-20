@@ -1,4 +1,5 @@
-import Image from "next/image";
+"use client"
+
 import { Header } from "./_components/Header";
 import { Hero } from "./_components/Hero";
 import { Spacing } from "./_components/Spacing";
@@ -6,9 +7,11 @@ import { Status } from "./_components/Status";
 import { Skills } from "./_components/Skills";
 import { Contact } from "./_components/Contact";
 import { Footer } from "./_components/Footer";
-import Head from "next/head";
+import { appWithTranslation } from "next-i18next";
+import "../i18n" // Import the translations
 
-export default function Home() {
+// Home page
+function Home() {
   return (
     <main>
       <Header />
@@ -35,3 +38,5 @@ export default function Home() {
     </main>
   );
 }
+
+export default appWithTranslation(Home); // translate the page

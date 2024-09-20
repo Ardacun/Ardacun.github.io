@@ -5,12 +5,12 @@ export const JiraIcon = (props: ComponentPropsWithoutRef<"svg"> & { size?: numbe
         <svg width={props.size} height={props.size} viewBox="0 0 256 256" version="1.1" preserveAspectRatio="xMidYMid">
         <defs>
             <linearGradient x1="98.0308675%" y1="0.160599572%" x2="58.8877062%" y2="40.7655246%" id="linearGradient-1">
-                <stop stop-color="#0052CC" offset="18%"></stop>
-                <stop stop-color="#2684FF" offset="100%"></stop>
+                <stop stopColor="#0052CC" offset="18%"></stop>
+                <stop stopColor="#2684FF" offset="100%"></stop>
             </linearGradient>
             <linearGradient x1="100.665247%" y1="0.45503212%" x2="55.4018095%" y2="44.7269807%" id="linearGradient-2">
-                <stop stop-color="#0052CC" offset="18%"></stop>
-                <stop stop-color="#2684FF" offset="100%"></stop>
+                <stop stopColor="#0052CC" offset="18%"></stop>
+                <stop stopColor="#2684FF" offset="100%"></stop>
             </linearGradient>
         </defs>
         <g>

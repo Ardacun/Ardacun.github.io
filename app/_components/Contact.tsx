@@ -1,13 +1,18 @@
 import { Badge } from "@/components/ui/badge"
 import { Section } from "./Section"
 import { ContactCard } from "./ContactCard"
+import { useTranslation } from "react-i18next";
 
+// Contact page
 export const Contact = () => {
+
+    const { t } = useTranslation(); // Destructure i18n correctly
+
     return (
         <Section className="flex flex-col items-start gap-4">
-            <Badge variant={"outline"}>Contact me</Badge>
+            <Badge variant={"outline"}>{t('contact')}</Badge>
             <h2 className="pb-2 text-3xl font-semibold tracking-tight first:mt-0">
-                I will be happy to work with you.
+                {t('happy')}
             </h2>
             <div className="flex flex-row max-md:flex-col w-full gap-4">
                 <div className="flex-1">
@@ -21,11 +26,11 @@ export const Contact = () => {
                 </div>
                 <div className="flex-1">
                 <ContactCard 
-                    name="dev.adrien.d@gmail.com" 
+                    name="adrien.dacunto@limayrac.fr" 
                     image="images/adrien_linkedin.png"
                     imageMedium="https://c.clc2l.com/t/g/m/gmail-cgKrcq.png" 
-                    description="Email me for job offers." 
-                    url="mailto:dev.adrien.d@gmail.com"
+                    description={t('email')}
+                    url="mailto:adrien.dacunto@limayrac.fr"
                 />   
                 </div>
             </div>

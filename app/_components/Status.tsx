@@ -4,21 +4,43 @@ import { Code, Coins, Landmark } from "lucide-react";
 import { ContactCard } from "./ContactCard";
 import { SideProject, SideProjectProps} from "./SideProject";
 import { Work, WorkProps } from "./Work";
+import { EducationProps, Education } from "./Education";
+import { useTranslation } from "react-i18next";
+import DiplomaSTI2D from "./DiplomaSTI2D";
+import DiplomaSNIR from "./DiplomaSNIR";
+import DiplomaRPI from "./DiplomaRPI";
+import DiplomaESI from "./DiplomaESI";
+import ThirdJob from "./ThirdJob";
+import SecondJob from "./SecondJob";
+import FirstJob from "./FirstJob";
 
+// Status component
 export const Status = () => {
-    return (
+   const { t } = useTranslation();
+   return (
       <Section className="flex max-md:flex-col items-start gap-4">
-        <div className="flex-[3] w-full">
+        <div className="flex-[2] w-full flex flex-col h-full gap-4">
           <Card className="w-full p-4 flex flex-col gap-2">
-            <p className="text-lg text-muted-foreground">Side, fun projects</p>
+            <p className="text-lg text-muted-foreground">{t('side_projects')}</p>
             <div className="flex flex-col gap-4">
               {SIDE_PROJECTS.map((project, index) => (
                 <SideProject
                   key={index}
-                  Logo={project.Logo}
-                  title={project.title}
-                  description={project.description}
-                  url={project.url}
+                  {...project}
+                  description={t(project.description)}
+                />
+              ))}
+            </div>
+          </Card>
+          <Card className="w-full p-4 flex flex-col gap-2">
+            <p className="text-lg text-muted-foreground">Education</p>
+            <div className="flex flex-col gap-4">
+              {EDUCATIONS.map((education, index) => (
+                <Education
+                  key={index}
+                  {...education}
+                  type={t(education.type)}
+                  description={education.description}
                 />
               ))}
             </div>
@@ -32,12 +54,15 @@ export const Status = () => {
                         <Work
                         key={index}
                         {...work}
+                        type={t(work.type)}
+                        role={t(work.role)}
+                        description={work.description}
                         />
                     ))}
                 </div>
             </Card>
           <Card className="p-4 flex-1 flex flex-col gap-2">
-            <p className="text-lg text-muted-foreground">Contact me</p>
+            <p className="text-lg text-muted-foreground">{t('contact')}</p>
             <ContactCard 
                 name="AdrienDacunto" 
                 image="images/adrien_linkedin.png"
@@ -51,50 +76,95 @@ export const Status = () => {
     );
   };
 
+// Side projects
 const SIDE_PROJECTS: SideProjectProps[] = [
     {
         Logo: Code,
         title: "TicTacToe",
-        description: "an online Tic Tac Toe application 🎮",
+        description: "tictactoe",
         url: "https://github.com/Ardacun/TicTacToe"
     },
     {
         Logo: Coins,
         title: "MoneyFlow-Monitor",
-        description: "a financial monitor application 💥",
+        description: "moneyflow",
         url: "https://github.com/Ardacun/MoneyFlow-Monitor"
     },
     {
         Logo: Landmark,
         title: "Stocktaking",
-        description: "an inventory management application 💲",
+        description: "stocktaking",
         url: "https://github.com/Ardacun/Stocktaking"
     }
 ]
 
+// Work experiences
 const WORKS: WorkProps[] = [
     {
         image: "https://media.licdn.com/dms/image/C4D0BAQF2j_LDG_TOzg/company-logo_100_100/0/1631375371456/airbusgroup_logo?e=1730332800&v=beta&t=BD4f6zuUFw6qdY-GpYxJOWqFeSVDHERI-6mC9gE_i8Y",
         title: "Airbus",
-        role: "Web Developer",
+        role: "web_dev",
+        description: <ThirdJob />,
         date: "2021 - 2023",
-        type: "Apprenticeship",
+        type: "apprenticeship",
         url: "https://www.airbus.com/en"
     },
     {
         image: "https://media.cdnws.com/_i/125303/805/3979/8/roulez-ecolo.png.webp",
+        description: <SecondJob />,
         title: "Roulezecolo",
-        role: "C# Developer",
+        role: "c#_dev",
         date: "2020 - 2020",
-        type: "Study project",
+        type: "study_project",
         url: "https://www.roulezecolo.com/"
     },
     {
         image: "https://media.licdn.com/dms/image/C4D0BAQF2j_LDG_TOzg/company-logo_100_100/0/1631375371456/airbusgroup_logo?e=1730332800&v=beta&t=BD4f6zuUFw6qdY-GpYxJOWqFeSVDHERI-6mC9gE_i8Y",
         title: "Airbus",
-        role: "Web Developer",
+        description: <FirstJob />,
+        role: "web_dev",
         date: "2019 - 2019",
-        type: "Internship",
+        type: "internship",
         url: "https://www.airbus.com/en"
+    }
+]
+
+// Education
+const EDUCATIONS: EducationProps[] = [
+    {
+        image: "./images/institut_limayrac_logo.png",
+        school: "Institut Limayrac",
+        diploma: "ESI",
+        description: <DiplomaESI />,
+        date: "2021 - 2023",
+        type: "Master",
+        url: "https://www.francecompetences.fr/recherche/RNCP/34471/"
+    },
+    {
+        image: "./images/institut_limayrac_logo.png",
+        school: "Institut Limayrac",
+        diploma: "RPI",
+        description: <DiplomaRPI />,
+        date: "2020 - 2021",
+        type: "Bachelor",
+        url: "https://www.francecompetences.fr/recherche/rncp/13387/"
+    },
+    {
+        image: "./images/institut_limayrac_logo.png",
+        school: "Institut Limayrac",
+        diploma: "SN-IR",
+        description: <DiplomaSNIR />,
+        date: "2018 - 2020",
+        type: "advanced_technician",
+        url: "https://www.francecompetences.fr/recherche/rncp/35341/"
+    },
+    {
+        image: "./images/josep_galliani.png",
+        school: "Lycée Joseph Gallieni",
+        diploma: "STI2D",
+        description: <DiplomaSTI2D />,
+        date: "2015 - 2018",
+        type: "baccalaureate",
+        url: "https://www.onisep.fr/formation/apres-la-3-la-voie-generale-et-technologique/qu-est-ce-que-la-voie-generale-et-technologique/la-voie-technologique-en-premiere-et-terminale/le-bac-sti2d-sciences-et-technologies-de-l-industrie-et-du-developpement-durable"
     }
 ]
