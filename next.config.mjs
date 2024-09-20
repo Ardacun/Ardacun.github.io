@@ -7,12 +7,9 @@ const nextConfig = {
     reactStrictMode: true,
     images: {
         unoptimized: true,
-    },
-    i18n: { // i18n config
-        locales: ['en', 'fr'],
-        defaultLocale: 'en',
-        localeDetection: false,
     }
 };
+
+export default nextConfig;
   
   
