@@ -12,11 +12,11 @@ const SecondJob = () => {
       <DialogTrigger asChild>
             <Button variant="outline" size="sm" color="accent" className="text-xs px-2 py-1 h-8"><Info size={16} /></Button>
       </DialogTrigger>
-      <DialogContent className="sm:max-w-[650px]">
-        <DialogHeader>
+      <DialogContent className="fixed sm:max-w-[650px] w-full max-h-[70vh] h-auto sm:h-auto sm:rounded-lg flex flex-col">
+        <DialogHeader className="p-4 border-b sm:p-6">
           <DialogTitle>{t('jobs.second_job.title')}</DialogTitle>
         </DialogHeader>
-        <DialogDescription>
+        <DialogDescription className="flex-1 overflow-y-auto p-4 sm:p-6">
           <p>{t('jobs.second_job.project')}</p>
           <br/>
           <strong>{t('jobs.second_job.project_label')}</strong>: {t('jobs.second_job.project')}
@@ -36,7 +36,7 @@ const SecondJob = () => {
             <li>{t('jobs.second_job.environment.2')}</li>
           </ul>
         </DialogDescription>
-        <DialogFooter>
+        <DialogFooter className="p-4 border-t sm:p-6">
           <DialogClose asChild>
             <Button variant="outline" color="accent">
               {t('close')}

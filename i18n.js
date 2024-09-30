@@ -211,7 +211,7 @@ const resources = {
       "databases_used": "J'ai travaillé avec des bases de données telles que <1>MySQL</1> et <1>MongoDB</1>.",
       "tools_used": "Les outils que j'utilise sont variés: <1>Visual Studio Code</1>, <1>GitHub</1>, <1>Git</1>, et <1>Jira</1>.",
       "frameworks_used": "J'utilise des frameworks personnels dans mes projets. Les plus fréquents sont <1>Angular</1>, <1>React</1>, et <1>Next.js</1>, ainsi que d'autres bibliothèques comme <1>Tailwind</1>.",
-      "agile_concepts": "J'ai appris les concepts d'agilité et les techniques de Scrum, comme <1>Kanban</1>, <1>Lean</1>, et <1>Kanban</1>.",
+      "agile_concepts": "Dans un cadre professionnel, j'ai travaillé au sein d'équipes utilisant la méthodologie <1>Scrum</1>, et je suis également familier avec le concept <1>SAFe</1>.",
       "at": "à",
 
       education: {
