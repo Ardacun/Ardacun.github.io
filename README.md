@@ -4,7 +4,7 @@ Welcome to the repository for my portfolio website! I'm Adrien D'acunto, a softw
 
 ## 🌐 Explore My Portfolio
 
-For a full view of my work, projects, and skills, please visit my portfolio website:
+For a full view of my work, projects, education and skills, please visit my portfolio website:
 
 **[Visit Portfolio](https://ardacun.github.io/)**
 
@@ -15,6 +15,7 @@ This repository contains the source code for my portfolio, built with Next.js an
 - **Projects Section:** Showcases a selection of my fun projects.
 - **About Me:** A brief bio and my journey in tech.
 - **Experiences:** Detailed accounts of my professional experiences and roles I've held.
+- **Education:** Detailed list of my diplomas.
 - **Skills:** Overview of my technical expertise.
 - **Contact:** How to get in touch with me.
 
@@ -30,17 +31,17 @@ Here are a few projects featured on my portfolio:
 
 I am currently **actively seeking** job opportunities in Full-Stack Development, Front-end Development, Back-end Development and Software Engineering. I am eager to bring my skills to a dynamic and forward-thinking team.
 
-If you’re hiring or know of any opportunities, please feel free to reach out!
+If you’re hiring or know of any opportunities, please feel free to reach out !
 
 ## 📫 Get in Touch
 
 I'm always open to new opportunities and collaborations. You can find more details on how to contact me on my [portfolio website](https://ardacun.github.io/), or connect with me directly on:
 
 - **LinkedIn:** [AdrienDacunto](https://linkedin.com/in/yourusername)
-- **Email:** [dev.adrien.d@gmail.com](dev.adrien.d@gmail.com)
+- **Email:** [adrien.dacunto@limayrac.fr](adrien.dacunto@limayrac.fr)
 
 ## 📝 License
 
-This repository and my portfolio are open-source. Feel free to explore and use!
+This repository and my portfolio are open-source. Feel free to explore and use !
 
 
