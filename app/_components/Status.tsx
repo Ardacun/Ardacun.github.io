@@ -101,7 +101,7 @@ const SIDE_PROJECTS: SideProjectProps[] = [
 // Work experiences
 const WORKS: WorkProps[] = [
     {
-        image: "https://media.licdn.com/dms/image/C4D0BAQF2j_LDG_TOzg/company-logo_100_100/0/1631375371456/airbusgroup_logo?e=1730332800&v=beta&t=BD4f6zuUFw6qdY-GpYxJOWqFeSVDHERI-6mC9gE_i8Y",
+        image: "./images/airbus_logo.png",
         title: "Airbus",
         role: "web_dev",
         description: <ThirdJob />,
@@ -110,7 +110,7 @@ const WORKS: WorkProps[] = [
         url: "https://www.airbus.com/en"
     },
     {
-        image: "https://media.cdnws.com/_i/125303/805/3979/8/roulez-ecolo.png.webp",
+        image: "./images/roulez-ecolo_logo.png",
         description: <SecondJob />,
         title: "Roulezecolo",
         role: "c#_dev",
@@ -119,7 +119,7 @@ const WORKS: WorkProps[] = [
         url: "https://www.roulezecolo.com/"
     },
     {
-        image: "https://media.licdn.com/dms/image/C4D0BAQF2j_LDG_TOzg/company-logo_100_100/0/1631375371456/airbusgroup_logo?e=1730332800&v=beta&t=BD4f6zuUFw6qdY-GpYxJOWqFeSVDHERI-6mC9gE_i8Y",
+        image: "./images/airbus_logo.png",
         title: "Airbus",
         description: <FirstJob />,
         role: "web_dev",
