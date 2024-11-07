@@ -31,11 +31,13 @@ const resources = {
       "happy": "Happy to work with you.",
       "love_code": "I love <1>coding</1>, currently looking for a job. Living in ",
       "web_tech": "During my professional experiences and academic training, I have used classical technologies such as <1>HTML</1>, <1>CSS</1>, <1>JavaScript</1>, <1>TypeScript</1> as well as <1>PHP</1> on the backend.",
-      "others_lang": "In parallel, I have used other languages, primarily <1>Java</1>, and also <1>Python</1>.",
+      "others_lang": "In parallel, I have used other languages, primarily <1>C#</1>, <1>Java</1>, and also <1>Python</1>.",
       "databases_used": "I have worked with databases such as <1>MySQL</1> and <1>MongoDB</1>.",
       "tools_used": "The tools I use are varied: <1>Visual Studio Code</1>, <1>GitHub</1>, <1>Git</1>, and <1>Jira</1>.",
       "frameworks_used": "I use various frameworks in my personal projects. The most frequent ones are <1>Angular</1>, <1>React</1>, and <1>Next.js</1>, as well as other libraries like <1>Tailwind</1>.",
       "agile_concepts": "In a professional setting, I have worked in teams using the <1>Scrum</1> methodology, and I am also familiar with the <1>SAFe</1> concept.",
+      "cloud": "Cloud",
+      "cloud_used": "I have worked with cloud services like <1>Azure</1> and <1>AWS</1> for deploying and managing applications in scalable environments.",
       "at": "at",
       
       education: {
@@ -83,7 +85,7 @@ const resources = {
             technical_english: "Skills in technical terms and the ability to communicate in English in a professional context."
           },
           snir: {
-            title: "The BTS Systèmes Numériques (SN), option Informatique et Réseaux, is a Bac+2 diploma. It prepares students for careers in the management of computer systems and networks, giving them technical skills in the fields of computing, networks and digital systems.",
+            title: "The BTS Systèmes Numériques (SN), option Informatique et Réseaux",
             description: "The BTS Systèmes Numériques (SN), option Informatique et Réseaux, is a Bac+2 diploma. It prepares students for careers in the management of computer systems and networks, giving them technical skills in the fields of computing, networks and digital systems.",
             subjects: "Subjects taught:",
             it_re_label: "Computing and networks",
@@ -206,11 +208,13 @@ const resources = {
       "happy": "Heureux de travailler avec vous.",
       "love_code": "J'aime <1>coder</1>, recherche actuellement un emploi. Vivant à ",
       "web_tech": "Pendant mes expériences professionnelles et mon entraînement académique, j'ai utilisé des technologies classiques telles que <1>HTML</1>, <1>CSS</1>, <1>JavaScript</1>, <1>TypeScript</1> ainsi que <1>PHP</1> sur le backend.",
-      "others_lang": "En parallèle, j'ai utilisé d'autres langages, principalement <1>Java</1>, et également <1>Python</1>.",
+      "others_lang": "En parallèle, j'ai utilisé d'autres langages, principalement <1>C#</1>,<1>Java</1>, et également <1>Python</1>.",
       "databases_used": "J'ai travaillé avec des bases de données telles que <1>MySQL</1> et <1>MongoDB</1>.",
       "tools_used": "Les outils que j'utilise sont variés: <1>Visual Studio Code</1>, <1>GitHub</1>, <1>Git</1>, et <1>Jira</1>.",
       "frameworks_used": "J'utilise des frameworks personnels dans mes projets. Les plus fréquents sont <1>Angular</1>, <1>React</1>, et <1>Next.js</1>, ainsi que d'autres bibliothèques comme <1>Tailwind</1>.",
       "agile_concepts": "Dans un cadre professionnel, j'ai travaillé au sein d'équipes utilisant la méthodologie <1>Scrum</1>, et je suis également familier avec le concept <1>SAFe</1>.",
+      "cloud": "Cloud",
+      "cloud_used": "J'ai travaillé avec des services cloud comme <1>Azure</1> et <1>AWS</1> pour déployer et gérer des applications dans des environnements évolutifs.",
       "at": "à",
 
       education: {

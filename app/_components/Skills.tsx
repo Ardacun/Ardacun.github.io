@@ -17,8 +17,11 @@ import { PythonIcon } from "./icons/PythonIcon";
 import { MongoDbIcon } from "./icons/MongoDbIcon";
 import { GithubIcon } from "./icons/Githubicon";
 import { GitIcon } from "./icons/GitIcon";
+import { AzureIcon } from "./icons/AzureIcon";
+import { AWSIcon } from "./icons/AWSIcon";
 import { NextJSIcon } from "./icons/NextJSIcon";
 import { Trans, useTranslation } from "react-i18next";
+import { CSharpIcon } from "./icons/CSharpIcon";
 
 // Skills component
 export const Skills = () => {
@@ -52,6 +55,7 @@ export const Skills = () => {
 
                 <div className="flex flex-col flex-1 min-w-[250px] gap-2">
                     <div className="flex flex-row gap-3">
+                        <CSharpIcon size={42} />
                         <JavaIcon size={42} />
                         <PythonIcon size={42} />
                     </div>
@@ -60,7 +64,7 @@ export const Skills = () => {
                     </h3>
                     <p className="text-sm text-muted-foreground">
                         <Trans i18nKey="others_lang">
-                            In parallel, I have used other languages, primarily <Code>Java</Code>, and also <Code>Python</Code>.
+                            In parallel, I have used other languages, primarily <Code>C#</Code>,<Code>Java</Code>, and also <Code>Python</Code>.
                         </Trans>
                     </p>
                 </div>
@@ -96,7 +100,20 @@ export const Skills = () => {
                         </Trans>
                     </p>
                 </div>
-
+                <div className="flex flex-col flex-1 min-w-[250px] gap-2">
+                    <div className="flex flex-row gap-3">
+                        <AzureIcon size={42} />
+                        <AWSIcon size={42} />
+                    </div>
+                    <h3 className="text-2xl font-semibold tracking-tight mb-2">
+                        {t('cloud')}
+                    </h3>
+                    <p className="text-sm text-muted-foreground">
+                        <Trans i18nKey="cloud_used">
+                            I have worked with cloud services like <Code>Azure</Code> and <Code>AWS</Code> for deploying and managing applications in scalable environments.
+                        </Trans>
+                    </p>
+                </div>
                 <div className="flex flex-col flex-1 min-w-[250px] gap-2">
                     <div className="flex flex-row gap-3">
                         <AngularIcon size={42} />
