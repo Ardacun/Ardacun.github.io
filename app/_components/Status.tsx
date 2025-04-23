@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card"
 import { Section } from "./Section"
-import { Code, Coins, Landmark } from "lucide-react";
+import { Code, Coins, Landmark, FileSearch, SquareTerminal, ServerCog } from "lucide-react";
 import { ContactCard } from "./ContactCard";
 import { SideProject, SideProjectProps} from "./SideProject";
 import { Work, WorkProps } from "./Work";
@@ -79,24 +79,51 @@ export const Status = () => {
 // Side projects
 const SIDE_PROJECTS: SideProjectProps[] = [
     {
-        Logo: Code,
-        title: "TicTacToe",
-        description: "tictactoe",
-        url: "https://github.com/Ardacun/TicTacToe"
+        Logo: SquareTerminal,
+        title: "Homelab Center Control",
+        description: "homelabcontrolcenter",
+        stack: "Angular • Spring Boot • Prometheus • Loki • PostgreSQL • Docker",
+        url: "/"
     },
     {
-        Logo: Coins,
-        title: "MoneyFlow-Monitor",
-        description: "moneyflow",
-        url: "https://github.com/Ardacun/MoneyFlow-Monitor"
+        Logo: FileSearch,
+        title: "PDF Assistant",
+        description: "pdfassistant",
+        stack: "Next.js • OpenAI • TailwindCSS • R2 Cloudflare • Supabase",
+        url: "/"
     },
     {
-        Logo: Landmark,
-        title: "Stocktaking",
-        description: "stocktaking",
-        url: "https://github.com/Ardacun/Stocktaking"
+        Logo: ServerCog,
+        title: "HomeLab",
+        description: "homelab",
+        stack: "Proxmox • Docker • OpenMediaVault • Plex • n8n • Grafana • Pi-hole",
+        url: "/"
     }
 ]
+
+// Side projects
+/*
+const SIDE_PROJECTS: SideProjectProps[] = [
+  {
+      Logo: Code,
+      title: "TicTacToe",
+      description: "tictactoe",
+      url: "https://github.com/Ardacun/TicTacToe"
+  },
+  {
+      Logo: Coins,
+      title: "MoneyFlow-Monitor",
+      description: "moneyflow",
+      url: "https://github.com/Ardacun/MoneyFlow-Monitor"
+  },
+  {
+      Logo: Landmark,
+      title: "Stocktaking",
+      description: "stocktaking",
+      url: "https://github.com/Ardacun/Stocktaking"
+  }
+]
+*/
 
 // Work experiences
 const WORKS: WorkProps[] = [

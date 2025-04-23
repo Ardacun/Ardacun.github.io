@@ -34,7 +34,7 @@ function Home() {
 
       <Spacing size="md" />
 
-      <Footer />
+      <Footer />                                      
     </main>
   );
 }
